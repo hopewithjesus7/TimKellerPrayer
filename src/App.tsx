@@ -11,11 +11,11 @@ import CalvinPrayers from "./pages/CalvinPrayers";
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/TimKellerPrayer">
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path="routine/:id" element={<PrayerRoutine />} />
+          <Route path="routine" element={<PrayerRoutine />} />
           <Route path="calvin" element={<CalvinPrayers />} />
         </Route>
       </Routes>
