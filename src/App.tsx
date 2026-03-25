@@ -15,7 +15,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path="routine" element={<PrayerRoutine />} />
+          <Route path="routine/:id" element={<PrayerRoutine />} />
           <Route path="calvin" element={<CalvinPrayers />} />
         </Route>
       </Routes>
